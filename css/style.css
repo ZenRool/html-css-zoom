@@ -19,7 +19,7 @@ html {
 header {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-start;
 
 
     height: 80px;
@@ -38,5 +38,35 @@ header > div {
 header > div:hover {
     background-color: #555;
 }
+/* fine header  */
 
+/* Main  */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+    height: calc(100vh - 180px);
+
+    /* overflow-y: auto; */
+}
+.video {
+    position: relative;
+
+    margin: 8px 2px;
+}
+img {
+    display: block;
+}
+.video > div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(90, 90, 90, 0.6);
+    height: 1.6rem;
+    padding: 0.3rem;
+}
 
