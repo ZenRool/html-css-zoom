@@ -14,6 +14,9 @@ html {
     color: white;
     background-color: #000;
 }
+.green {
+    color: limegreen;
+}
 
 /* Header  */
 header {
@@ -48,9 +51,9 @@ main {
     align-items: flex-start;
 
     width: 100%;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 170px);
 
-    /* overflow-y: auto; */
+    overflow-y: auto;
 }
 .video {
     position: relative;
@@ -69,4 +72,52 @@ img {
     height: 1.6rem;
     padding: 0.3rem;
 }
+/* fine main  */
+
+/* Footer  */
+footer {
+    justify-content: space-between;
+
+    background-color: #272727;
+    height: 90px;
+    width: 100%;
+
+}
+footer, footer > div, .col {
+    display: flex;
+    align-items: center;
+}
+.col {
+    flex-direction: column;
+    padding: 1rem;
+
+    cursor: pointer;
+
+}
+.col:hover, footer i {
+    color: #E9E9E9;
+}
+.col i {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+
+.end-meet {
+    
+    align-self: stretch;
+    padding: 0 1.5rem;
+    background-color: #444;
+}
+a {
+    align-self: center;
+    color: red;
+    text-decoration: none;
+}
+.end-meet:hover {
+    background-color: #555;
+
+}
+
+/* fine footer  */
 
